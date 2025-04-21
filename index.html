@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhon Marc Bautista | Front-End Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="avatar-container">
+        <img src="images/profile.jpg" alt="Your Avatar" class="avatar">
+      </div>
+      <h1>Jhon Marc Bautista</h1>
+      <h2>Aspiring Front-End Developer</h2>
+      <div class="social-links">
+        <a href="https://instagram.com/j.mbsts" target="_blank" title="Instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="#" onclick="return false;" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:jmbautista.dev@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="info-box">
+        <p>Focused on crafting clean,<br>user-friendly web experiences.</p>
+      </div>
+      <div class="left-panel-links">
+        <a href="#projects-section">Projects</a>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h1>About Me</h1>
+      <p>A passionate and self-learning front-end developer (15 years old) with a growing understanding of several programming languages and experience in software and game development. I'm eager to create user-friendly web experiences, currently focused on mastering front-end technologies, and exploring back-end development with the goal of becoming a full-stack developer.</p>
+
+      <h2>Programming Languages</h2>
+      <ul class="skills-list">
+        <li>C++</li>
+        <li>HTML</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+        <li>Java</li>
+        <li>PHP</li>
+      </ul>
+
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>CSS</li>
+        <li>React</li>
+        <li>Responsive</li>
+        <li>UI/UX</li>
+        <li>Git</li>
+        <li>Problem Solving</li>
+        <li>Collaboration</li>
+      </ul>
+
+      <h2 id="projects-section">Projects</h2>
+      <div class="projects-list">
+        <div class="project-card" onclick="openProject('digital-photobooth')">
+          <a href="https://gtxgamerboy.github.io/DigitalPhotoBooth/" target="_blank"
+            style="text-decoration: none; color: inherit;">
+            <div class="project-info">
+              <h3>Digital Photobooth</h3>
+              <p>An interactive web application simulating a digital photobooth experience with real-time image capture and
+                customization options.</p>
+            </div>
+          </a>
+        </div>
+        <div class="more-projects">
+          <h3>More Projects Soon</h3>
+          <p>I'm actively working on new projects. Stay tuned for more!</p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p>Instagram: <a href="https://instagram.com/j.mbsts" target="_blank">@j.mbsts</a></p>
+        <p>Email: <a href="mailto:jmbautista.dev@gmail.com">jmbautista.dev@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openProject(projectId) {
+      alert(`Opening project details for: ${projectId}`);
+    }
+  </script>
+</body>
+
+</html>
