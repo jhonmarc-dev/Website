@@ -758,29 +758,40 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    border: none;
-    width: 100%;
-    margin: 0 auto;
+  body {
+    padding: 15px; /* Keep the body padding */
+    display: grid; /* Keep the body as a grid */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
   }
 
-  .left-panel,
-  .right-panel {
+  .container {
+    max-width: 100%; /* Take full width on mobile */
     width: 100%;
-    padding: 20px;
+    margin: 0 auto;
+    display: flex; /* Change container to flex for mobile layout */
+    flex-direction: column; /* Stack left and right panels vertically */
+    border-radius: 0; /* Remove border-radius on mobile for full width */
+    overflow: visible; /* Allow content to flow if needed */
+    box-shadow: none; /* Remove shadow on mobile */
+    border: none; /* Remove border on mobile */
   }
 
   .left-panel {
-    border-radius: 12px 12px 0 0;
-    border-right: none;
-    border-bottom: 1px solid var(--border-color);
+    width: 100%; /* Take full width */
+    border-bottom: 1px solid var(--border-color); /* Keep the bottom border */
+    border-right: none; /* Ensure no right border */
+    border-radius: 12px 12px 0 0; /* Keep top border radius */
+    padding: 20px; /* Adjust padding */
   }
 
   .right-panel {
-    border-radius: 0 0 12px 12px;
+    width: 100%; /* Take full width */
+    border-radius: 0 0 12px 12px; /* Keep bottom border radius */
+    padding: 20px; /* Adjust padding */
   }
 
+  /* Keep other mobile-specific styles as they are */
   .avatar-container {
     width: 80px;
     height: 80px;
